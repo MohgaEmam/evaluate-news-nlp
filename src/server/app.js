@@ -23,6 +23,6 @@ app.get("/test", function (req, res) {
   res.send(mockAPI);
 });
 // Post
-app.post("/article", postRequest.inputValidation, postRequest.handlePost);
+app.post("/article", postRequest.getArticle, postRequest.getText);
 
 module.exports = app;
